@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovidijus</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+            background-size: 1400% 100%;
+            animation: rainbow 10s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% {background-position: 0%;}
+            100% {background-position: 100%;}
+        }
+
+        #centered-container {
+            text-align: center;
+            margin: 1em; /* Add a small margin */
+        }
+
+        #centered-image {
+            max-width: calc(100% - 2em); /* Subtract twice the margin */
+            max-height: calc(100vh - 2em); /* Subtract twice the margin */
+            transition: transform 5s ease;
+        }
+
+        #centered-image:hover {
+            transform: rotate(360deg);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red);
+                background-size: 100% 1400%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="centered-container">
+        <a href="http://jacopo.co.uk">
+            <img id="centered-image" src="ovidijus.jpg" alt="Ovidijus">
+        </a>
+    </div>
+</body>
+</html>
