@@ -12,14 +12,35 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-            background-size: 1400% 100%;
+            background: violet; /* Start with the first color */
             animation: rainbow 10s linear infinite;
         }
 
         @keyframes rainbow {
-            0% {background-position: 0%;}
-            100% {background-position: 100%;}
+            0% {
+                background: violet;
+            }
+            14.28% {
+                background: indigo;
+            }
+            28.56% {
+                background: blue;
+            }
+            42.84% {
+                background: green;
+            }
+            57.12% {
+                background: yellow;
+            }
+            71.4% {
+                background: orange;
+            }
+            85.68% {
+                background: red;
+            }
+            100% {
+                background: violet; /* Loop back to the first color */
+            }
         }
 
         #centered-container {
