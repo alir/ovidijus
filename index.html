@@ -65,6 +65,7 @@ He finishes his drink in 8
         }
 
         #centered-image {
+            border-radius: 4em; /* Improve the transition between the image and background */
             max-width: calc(100% - 1em); /* Subtract twice the margin */
             max-height: calc(100vh - 1em); /* Subtract twice the margin */
             transition: transform 5s ease;
@@ -80,6 +81,7 @@ He finishes his drink in 8
             }
         }
 
+        /* Probably no longer necessary */
         @media (max-width: 768px) {
             body {
                 background: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red);
