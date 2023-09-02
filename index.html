@@ -15,87 +15,87 @@ He finishes his drink in 8
                          0
 -->
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ovidijus</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: violet; /* Start with the first color */
-            animation: rainbow 10s linear infinite;
-        }
-
-        @keyframes rainbow {
-            0% {
-                background: violet;
-            }
-            14.28% {
-                background: indigo;
-            }
-            28.56% {
-                background: blue;
-            }
-            42.84% {
-                background: green;
-            }
-            57.12% {
-                background: yellow;
-            }
-            71.4% {
-                background: orange;
-            }
-            85.68% {
-                background: red;
-            }
-            100% {
-                background: violet; /* Loop back to the first color */
-            }
-        }
-
-        #centered-container {
-            text-align: center;
-            margin: 0.5em; /* Add a small margin */
-        }
-
-        #centered-image {
-            border-radius: 4em; /* Improve the transition between the image and background */
-            max-width: calc(100% - 1em); /* Subtract twice the margin */
-            max-height: calc(100vh - 1em); /* Subtract twice the margin */
-            transition: transform 5s ease;
-        }
-
-        body:hover #centered-image {
-            animation: rotating 3s linear infinite;
-        }
-
-        @keyframes rotating {
-            100% {
-                transform: rotate(1turn);
-            }
-        }
-
-        /* Probably no longer necessary */
-        @media (max-width: 768px) {
-            body {
-                background: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red);
-                background-size: 100% 1400%;
-                animation: rainbow 10s linear infinite;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div id="centered-container">
-        <a href="http://jacopo.co.uk">
-            <img id="centered-image" src="ovidijus.jpg" alt="Ovidijus">
-        </a>
-    </div>
-</body>
-</html>
+<html lang="en">  <!-- Create the HTML with a lang of en -->
+<head>  <!-- Create the head -->
+    <meta charset="UTF-8">  <!-- Set the meta named charset to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Set the meta named viewport to width=device-width, initial-scale=1.0 -->
+    <title>Ovidijus</title>  <!-- Set the title to Ovidijus -->
+    <style>  /* Create the style */
+        body {  /* Create the style for body */
+            margin: 0;  /* Set the margin to 0 */
+            padding: 0;  /* Set the padding to 0 */
+            display: flex;  /* Set the display to flex */
+            align-items: center;  /* Set the align-items to center */
+            justify-content: center;  /* Set the justify-content to center */
+            height: 100vh;  /* Set the height to 100vh */
+            background: violet;  /* Set the background to violet */
+            animation: rainbow 10s linear infinite;  /* Set the animation to rainbow 10s linear infinite */
+        }  /* Stop creating the style for body */
+        /* This line is intentionally left blank */
+        @keyframes rainbow {  /* Create the keyframes for rainbow */
+            0% {  /* Create the keyframes for rainbow at 0% */
+                background: violet;  /* Set the background to violet */
+            }  /* Stop creating the keyframes for rainbow at 0% */
+            14.28% {  /* Create the keyframes for rainbow at 14.28% */
+                background: indigo;  /* Set the background to indigo */
+            }  /* Stop creating the keyframes for rainbow at 14.28% */
+            28.56% {  /* Create the keyframes for rainbow at 28.56% */
+                background: blue;  /* Set the background to blue */
+            }  /* Stop creating the keyframes for rainbow at 28.56% */
+            42.84% {  /* Create the keyframes for rainbow at 42.84% */
+                background: green;  /* Set the background to green */
+            }  /* Stop creating the keyframes for rainbow at 42.84% */
+            57.12% {  /* Create the keyframes for rainbow at 57.12% */
+                background: yellow;  /* Set the background to yellow */
+            }  /* Stop creating the keyframes for rainbow at 57.12% */
+            71.4% {  /* Create the keyframes for rainbow at 71.4% */
+                background: orange;  /* Set the background to orange */
+            }  /* Stop creating the keyframes for rainbow at 71.4% */
+            85.68% {  /* Create the keyframes for rainbow at 85.68% */
+                background: red;  /* Set the background to red */
+            }  /* Stop creating the keyframes for rainbow at 85.68% */
+            100% {  /* Create the keyframes for rainbow at 100% */
+                background: violet;  /* Set the background to violet */
+            }  /* Stop creating the keyframes for rainbow at 100% */
+        }  /* Stop creating the keyframes for rainbow */
+        /* This line is intentionally left blank */
+        #centered-container {  /* Create the style for #centered-container */
+            text-align: center;  /* Set the text-align to center */
+            margin: 0.5em;  /* Set the margin to 0.5em */
+        }  /* Stop creating the style for centered-container */
+        /* This line is intentionally left blank */
+        #centered-image {  /* Create the style for #centered-image */
+            border-radius: 4em;  /* Set the border-radius to 4em */
+            max-width: calc(100% - 1em);  /* Set the max-width to calc(100% - 1em) */
+            max-height: calc(100vh - 1em); /* Set the max-height to calc(100% - 1em) */
+            transition: transform 5s ease;  /* Set the transition to transdform 5s ease */
+        }  /* Stop creating the style for #centered-image */
+        /* This line is intentionally left blank */
+        body:hover #centered-image {  /* Create the style for body:hover #centered-image */
+            animation: rotating 3s linear infinite;  /* Set the animation to rotating 3s linear infinite */
+        }  /* Stop creating the style for body:hover #centered-image */
+        /* This line is intentionally left blank */
+        @keyframes rotating {  /* Create the keyframes for rotating */
+            100% {  /* Create the keyframes for rotating at 100% */
+                transform: rotate(1turn);  /* Set the transform to rotate(1turn) */
+            }  /* Stop creating the keyframes for rotating at 100% */
+        }  /* Stop creating the keyframes for rotating */
+        /* This line is intentionally left blank */
+        @media (max-width: 768px) {  /* Create the style for @media (max-width: 768px) */
+            body {  /* Create the style for body */
+                background: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red);  /* Set the background to linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red)*/
+                background-size: 100% 1400%;  /* Set the background-size to 100% 1400% */
+                animation: rainbow 10s linear infinite;  /* Set the animation to rainbow 10s linear infinite */
+            }  /* Stop creating the style for body */
+        }  /* Stop creating the style for @media (max-width: 768px) */
+    </style>  <!-- Stop creating the style -->
+</head>  <!-- Stop creating the head -->
+<body>  <!-- Create the body -->
+    <div id="centered-container">  <!-- Create the div with id of centered-container -->
+        <a href="http://jacopo.co.uk">  <!-- Create the a with href of http://jacopo.co.uk -->
+            <img id="centered-image" src="ovidijus.jpg" alt="Ovidijus"> <!-- Create the img with id of centered-image and src of ovidijus.co.uk and alt of Ovidijus -->
+        </a>  <!-- Stop creating the a -->
+    </div>  <!-- Stop creating the div -->
+</body>  <!-- Stop creating the body -->
+</html>  <!-- Stop creating the HTML -->
+<!-- This line is intentionally left blank -->
